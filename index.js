@@ -81,7 +81,7 @@ const mergeAndWriteData = async () => {
 
     await browser.close();
     const finalDataset = [...specificUrlsResults, ...newDataset]; // Combining datasets
-    fs.writeFileSync('final_dataset.json', JSON.stringify(finalDataset, null, 2)); // Writing data to file
+    fs.writeFileSync('new_zealand_legislation_list.json', JSON.stringify(finalDataset, null, 2)); // Writing data to file
 };
 
 mergeAndWriteData().catch(console.error);
